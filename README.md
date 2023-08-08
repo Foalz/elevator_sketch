@@ -84,14 +84,14 @@ Elevator.cpp:
 #include "Arduino.h"
 
 Elevator::Elevator(int btnPins[4], int swPins[4], int nfloors, int btnSource, int swSource){
-  \\This is the constructor of the class, here we are defining all the necessary variables to
-  \\make easier the use of main code, and keep it simpler as possible.
-  \\
-  \\It needs to initialize with two arrays, one for button pins, and other for reed switches pins.
-  \\btnPins[4] & swPins[4] respectively (for 4 floors, if elevator has 6 floors, put 6 elements instead).
-  \\nfloors variable sets the maximum number of floors of the elevator,
-  \\
-  \\btnSource and swSource are the voltage sources of buttons and switches.
+  //This is the constructor of the class, here we are defining all the necessary variables to
+  //make easier the use of main code, and keep it simpler as possible.
+  //
+  //It needs to initialize with two arrays, one for button pins, and other for reed switches pins.
+  //btnPins[4] & swPins[4] respectively (for 4 floors, if elevator has 6 floors, put 6 elements instead).
+  //nfloors variable sets the maximum number of floors of the elevator,
+  //
+  //btnSource and swSource are the voltage sources of buttons and switches.
   for (int i = 0; i < nfloors; i++){
     this->btnPins[i] = btnPins[i];
     this->swPins[i] = swPins[i];
@@ -107,8 +107,8 @@ Elevator::Elevator(int btnPins[4], int swPins[4], int nfloors, int btnSource, in
 }
 
 void Elevator::setMaintenanceMode(int mode){
-  \\Maintenance mode ensures all the buttons remains in LOW mode, to avoid misfunctions between server
-  \\and physical circuit.
+  //Maintenance mode ensures all the buttons remains in LOW mode, to avoid misfunctions between server
+  //and physical circuit.
   this->underMaintenance = mode;
   digitalWrite(this->btnSource, !mode);
 }
@@ -144,8 +144,8 @@ Display.cpp:
 #include "Arduino.h"
 
 Display::Display(int pins[7]){
-  \\Sets all the pins as OUTPUT, in this constructor, we need to pass the list
-  \\of pins we will connect to the digital pins (except for ground).
+  //Sets all the pins as OUTPUT, in this constructor, we need to pass the list
+  //of pins we will connect to the digital pins (except for ground).
   for (int i = 0; i < 7; i++){
     pinMode(pins[i], OUTPUT);
   }
@@ -159,7 +159,7 @@ Display::Display(int pins[7]){
 }
 
 void Display::printNumber(int num){
-  \\Change it as you need! Make sure you have connected it at right way.
+  //Change it as you need! Make sure you have connected it at right way.
   switch(num){
     case 0:
       //Prints "P"
