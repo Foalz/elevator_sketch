@@ -79,7 +79,7 @@ Is used to simplify main code, ensuring this could be used as guide to other stu
 
 Elevator.cpp:
 
-```
+```cpp
 #include "Elevator.h"
 #include "Arduino.h"
 
@@ -139,7 +139,7 @@ This is used to turn on certain pins of 7 segment display.
 
 Display.cpp:
 
-```
+```cpp
 #include "Display.h"
 #include "Arduino.h"
 
