@@ -79,7 +79,7 @@ Is used to simplify main code, ensuring this could be used as guide to other stu
 
 Elevator.cpp:
 
-`
+```
 #include "Elevator.h"
 #include "Arduino.h"
 
@@ -131,7 +131,7 @@ int Elevator::getCurrentFloor(){
   this->currentFloor = checkFloor();
   return this->currentFloor;
 }
-`
+```
 
 ### Display library
 
@@ -139,7 +139,7 @@ This is used to turn on certain pins of 7 segment display.
 
 Display.cpp:
 
-`
+```
 #include "Display.h"
 #include "Arduino.h"
 
@@ -233,7 +233,7 @@ void Display::printNumber(int num){
       break;
   }
 }
-`
+```
 ## Warnings
 
 Make sure to follow this guide and the circuit exactly, otherwise you can damage your arduino and your components, we recommend you to use this code and this project as a guide, and if you want to test it, connect carefully all the components, we are not
