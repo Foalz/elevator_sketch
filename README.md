@@ -1,7 +1,9 @@
 # elevator_sketch
 
 A university project for Control Systems I; this is an Elevator with 4 floors (ground, 1, 2 & 3).
-Circuit
+Circuit.
+
+[Demonstration video of the project](https://www.youtube.com/watch?v=KTsu-rXeeRE&feature=youtu.be)
 
 For this project, you will need the following components:
 
@@ -16,24 +18,24 @@ For this project, you will need the following components:
 
 #### Digital Pins
 
-- 2, 3, 4, 5: Used as INPUT mode to read if the button was pressed.
-- 6, 7: Used as OUTPUT mode to be the voltage source
-- 8, 9, 10, 11: Used for stepper motor H bridge.
+2, 3, 4, 5: Used as INPUT mode to read if the button was pressed. 
+6, 7: Used as OUTPUT mode to be the voltage source
+8, 9, 10, 11: Used for stepper motor H bridge.
 
 #### Analog Pins
 
-- A0, A1, A2, A3: Used as INPUT mode to read if reed switches are closed.
-- A4, A5: Used to comunicate and send instructions to slave arduino.
+A0, A1, A2, A3: Used as INPUT mode to read if reed switches are closed.
+A4, A5: Used to comunicate and send instructions to slave arduino.
 
 ### Slave Arduino
 
 #### Digital Pins
 
-- 2, 3, 4, 5, 6, 7, 8: Used as OUTPUT mode, to be the voltage source for 7 segmend display.
+2, 3, 4, 5, 6, 7, 8: Used as OUTPUT mode, to be the voltage source for 7 segmend display.
 
 #### Analog Pins
 
-- A4, A5: Used to comunicate and receive instructions from master arduino.
+A4, A5: Used to comunicate and receive instructions from master arduino.
 
 ## Circuit diagrams
 
